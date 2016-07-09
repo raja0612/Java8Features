@@ -1,0 +1,27 @@
+Steps for adding your local Project to remote Github repository.
+
+1. Crate your own repository wothout any README,md or license file (ex:( https://github.com/raja0612/Java8Features.git)
+2. On your local machine, go to project workspace directory (ex: C:\Users\RAJASHEKHAR\workspace\jpa\Java8Features)
+3.Initialize git repository (ex : git init)
+4. add README.md  , .ignore files ( ex: touch README.md , touch .ignore  , these two commands will create those files)
+5. add project description on README.md ( ex : vim README.md then enter "i" write text an then enter esc + :x)
+6. add any files which you dont want to push remote repo  on .ignore file, same like vim .ignore then press i then start typing \bin ,\.classpath \.settings \.project \target and then esc :x 
+7. add files which you want to push to remote repo 
+  
+    git add src
+    git add README.md
+    git add .ignore
+    
+    
+8. git status
+
+
+9 . git commit -m "Message here"
+
+10. add remote repo ( git remote add origin https://github.com/raja0612/Java8Features.git)
+
+11. push changes to remote repo ( git push -u origin master)
+
+12.next time onwards just git push 
+
+
