@@ -1,1 +1,2 @@
-#Testing
+#Excluding eclipse related settings.
+.project
