@@ -1,0 +1,131 @@
+In Java static is modifier. It can be applied to member variables and methods.
+
+Non-Static Variables.
+---------------------
+
+The non static variables are belong to each instance of class. That means each object maintains own copy of non static variables.
+
+
+public class NonStatic{
+
+      public int x;
+}
+
+
+NonStatic obj1 = new NonStatic();
+
+    obj1.x = 10;
+
+
+NonStatic obj2 = new NonStatic();
+
+obj2.x = 20;
+
+
+So here obj1 & obj2 both objects maintain separate x value in different memory location.
+
+
+Static Variables:
+------------
+
+
+public class  StaticDemo{
+
+      public static int x;
+}
+
+
+StaticDemo s1 = new StaticDemo();
+
+s1.x = 10;
+
+StaticDemo s2 = new StaticDemo();
+
+s2.x = 20;
+
+System.out.println(x);
+
+System.out.println(x);
+
+
+The above two print statements print 20.
+
+because static variables belong to class not to instance.
+
+All static variables commonly shared by all objects.
+
+ static variables directly accessed by class names.
+
+ System.out.println(StaticDemo.x);
+
+
+
+
+ Non-Static methods.
+ ------------------
+
+
+ public class NonStaticMethod{
+
+     public void play(){
+
+         System.out.println(" I would love to play Cricket");
+     }
+ }
+
+ To access all non static methods of class, we need instance of that class.
+
+
+NonStaticMethod obj = new NonStaticMethod();
+
+obj.play();
+
+and this method maintains separate memory for each instance of class.
+
+
+ Static methods.
+ ------------------
+
+
+ public class NonStaticMethod{
+
+     public static void play(){
+
+         System.out.println(" I would love to play Cricket");
+     }
+ }
+
+ To access static methods of class, no need to create instance of the class.
+
+ static methods can be accessed by class name directly.
+
+
+ NonStaticMethod.play();
+
+ all static methods shares common memory for all the instances of that class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
